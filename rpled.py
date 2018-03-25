@@ -16,7 +16,6 @@ class MyTCPServer(SocketServer.TCPServer):
         return
 
     def server_close(self):
-        print("server_close")
         GPIO.cleanup(self.bcm)
         return SocketServer.TCPServer.server_close(self)
 
