@@ -1,0 +1,10 @@
+[Unit]
+Description=Controll LED
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/rpled/rpled.py
+User=pi
+Group=pi
